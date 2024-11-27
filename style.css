@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+.container{
+ 
+    min-height: 100vh;
+    width: 50%;
+    background-color: #dddddd;
+    margin: auto;
+}
+.box1{
+    min-height: 250px;
+    width: 100%;
+    padding: 20px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.balance{
+    margin-top: 30px;
+    line-height: 35px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.balance p{
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.min-box{
+    margin-top: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.income-div{
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.income-div p{
+    font-size: 25px ;
+}
+.outcome-div{
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.outcome-div p{
+    font-size: 25px;
+}
+
+.box2{
+    min-height: 400px;
+    border: 1px solid black;
+    padding: 20px;
+}
+.toggle{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.toggle .tab1 ,
+.tab2 ,
+.tab3{
+    opacity: .4;
+}
+.expense{
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+}
+.expense ul {
+    width:100% ;
+    min-height: 250px;
+    padding: 0 20px 40px 20px;
+}
+.expense ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.expense ul .entry p{
+    font-size: 22px;
+}
+.expense ul .edit{
+    position: absolute;
+    top: 0;
+    right: 40px;
+    background: url('icon/edit.png');
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.expense ul .close{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: url('icon/trash.png');
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.income{
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+}
+.income ul {
+    width:100% ;
+    min-height: 250px;
+    padding: 0 20px 40px 20px;
+}
+.income ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.income ul .entry p{
+    font-size: 22px;
+}
+.income ul .edit{
+    position: absolute;
+    top: 0;
+    right: 40px;
+    background: url('icon/edit.png');
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.income ul .close{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: url('icon/trash.png');
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.all{
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+}
+.all ul {
+    width:100% ;
+    min-height: 250px;
+    padding: 0 20px;
+}
+.all ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.all ul .entry p{
+    font-size: 22px;
+}
+
+.all ul .close{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: url('icon/trash.png');
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+.inputs{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.inputs input{
+    border: none;
+    outline: none;
+    padding:  10px;
+    color: black;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.inputs img{
+    width: 40px;
+    height: 40px;
+}
+.active{
+    opacity: 1 !important;
+}
+.hide{
+    display: none;
+}
+@media (max-width:412px){
+    .container{
+        min-height: 100vh;
+        width: 100%;
+    }
+    .box1{
+        min-height: 300px;
+    }
+    .balance h2{
+        font-size: 20px;
+    }
+    .balance p{
+        letter-spacing: 2px;
+    }
+
+    .box2{
+        min-height: 550px;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    .toggle{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 25px;
+    }
+    .toggle .tab1 ,
+    .tab2 ,
+    .tab3{
+        opacity: .4;
+    }
+    .expense{
+        min-height: 450px;
+    }
+    .expense ul {
+        border: 1px black solid;
+        min-height: 400px;
+        margin-top: 15px;
+    }
+    .income{
+        min-height: 450px;
+    }
+    .income ul {
+        min-height: 400px;
+        margin-top: 15px;
+    }
+    .all{
+        width: 100%;
+        min-height: 450px;
+        position: relative;
+    }
+    .all ul {
+    min-height: 400px;
+    }
+    .inputs input{
+        font-size: 14px;
+        border-radius: 10px;
+        min-width: 130px;
+        padding: 10px 5px;
+    }
+    .inputs img{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media  (min-width: 413px) and (max-width: 1034px){
+    .container{
+        min-height: 50vh;
+        width: 100%;
+    }
+    .inputs input{
+        min-width: 150px;
+        padding:  10px;
+    }
+    .inputs img{
+        width: 40px;
+        height: 40px;
+    }
+    
+}

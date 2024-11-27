@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="title">
+                <h3>code <h1>Idriss</h1></h3>
+            </div>
+            <div class="balance">
+                <h2>
+                    Balance
+                </h2>
+                <div class="total-balance">
+                
+                </div>
+            </div>
+            <div class="min-box">
+                <div class="income-div">
+                    <h3>
+                        Income
+                    </h3>   
+                    <div class="total-income">
+                
+                    </div> 
+                </div>
+                <div class="outcome-div">
+                    <h3>
+                        Outcome
+                    </h3> 
+                    <div class="total-outcome">
+                     
+                    </div>     
+                </div>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="title">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="toggle">
+                <div class="tab1">Expenses</div>
+                <div class="tab2">Income</div>
+                <div class="tab3 active">All</div>
+            </div>
+            <div class="expense hide">
+                <ul class="list">
+                
+                </ul>
+                <div class="inputs">
+                    <input type="text" placeholder="Enter Your Title" id="title-expense">
+                    <input type="text" placeholder="Enter Your Price" id="price-expense">
+                    <img src="icon/plus.png" id ="add-expense">
+                </div>
+            </div>
+            <div class="income hide">
+                <ul class="list">
+
+                </ul>
+                <div class="inputs">
+                    <input type="text" placeholder="Enter Your Title" id="title-income">
+                    <input type="text" placeholder="Enter Your Price" id="price-income">
+                    <img src="icon/plus.png" id="add-income">
+                </div>
+            </div>
+            <div class="all">
+                <ul class="list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="budget.js"></script>
+</body>
+</html>
